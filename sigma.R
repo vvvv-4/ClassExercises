@@ -14,10 +14,13 @@ answer <- readline(prompt = "Please enter an integer smaller than 1000:  ")
 answer <- as.numeric(answer)
 # check if the number is valid
 if (is.na(answer)) {
+# explain the condition
   print("Entry is not a number.")
 } else if (answer > 1000) {
+# explain the condition
   print(paste(answer, "is too large! Try a number smaller than 1000"))
 } else {
+# explain the condition
   print(paste("The sum of the number from 1 to",
               answer,"is", sum(1:answer)))
 }
