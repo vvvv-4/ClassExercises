@@ -15,6 +15,9 @@ answer <- as.numeric(answer)
 # check if the number is valid
 if (is.na(answer)) {
   print("Entry is not a number.")
+} else if (answer > 1000) {
+  print(paste(answer, "is too large! Try a number smaller than 1000"))
 } else {
-  print(paste("you managed to enter a number! it is",answer))
+  print(paste("The sum of the number from 1 to",
+              answer,"is", sum(1:answer)))
 }
