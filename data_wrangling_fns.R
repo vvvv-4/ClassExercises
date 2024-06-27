@@ -17,3 +17,10 @@ a <- difftime(later, now, units = "mins")
 
 # lubridate example 
 another_now <- lubridate::dmy("17 12, 2012")
+
+
+# Extra Cat vs print
+
+sentence <- "This is the-\t-first line.\nThis is the second"
+print(sentence)
+cat(sentence)
